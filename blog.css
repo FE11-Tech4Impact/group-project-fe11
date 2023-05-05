@@ -1,34 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root{
+    --primary-color: #000;
+    --bg: #fff;
+    --blue: #007bff; 
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #077252;
+    --teal: #29b27f;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #070717;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa; 
+    --dark: #343a40;
 
-* {
-  font-family: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 
-.body{
-    margin: 0 120px;
-}
-
-.navbar{
-    margin: 0 120px;
-}
-
-.nav-link{
+body{
+    background: var(--bg);
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    color: #78828A;
-    font-weight: 500;
+    color: solid black;
+    padding: 0 7.5rem;
 }
 
-.nav-link:hover{
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    color: #00A376;
-    font-weight: 700;
+body a{
+    font-size: 1rem;
+    text-decoration: none;
 }
 
-.navbar-nav .icon{
-    margin: 0 8px;
+
+/* Navbar */
+
+.navbar-action-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 144px;
+    height: 48px;
+    margin: 0 1rem;
+    font-weight: 600;
+    color: var(--teal);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 1px solid var(--teal);
+    text-decoration: none;
+    font-size: 14px;
+
 }
+
+.navbar-action-item:hover{
+    color: var(--teal);
+    border-color: var(--green);
+}
+.btn-primary
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 48px;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0;
+    font-weight: 600;
+    background-color: var(--teal);
+    color: var(--white);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 1px solid var(--teal);
+    text-decoration: none;
+}
+
+.btn-primary:hover{
+    border: 2px solid var(--green);
+    background-color: var(--green);
+}
+
+.icon-menu{
+    display: flex;
+    margin: 0 0.8rem;
+    align-items: center;
+    transition: 0.3s ease;
+    color: var(--gray-dark);
+}
+
+.icon-menu:hover{
+    color: var(--teal);
+    transition: 0.3s ease;
+}
+
+/* End Navbar */
 
 #carouselExampleSlidesOnly {
     margin: 40px 120px;
